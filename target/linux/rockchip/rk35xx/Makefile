@@ -2,15 +2,15 @@
 
 include $(TOPDIR)/rules.mk
 
-BOARD:=rockchip
-BOARDNAME:=Rockchip
+BOARD:=rk35xx
+BOARDNAME:=RK35xx-Rockchip
 FEATURES:=ext4 audio usb usbgadget display gpio fpu pci pcie rootfs-part boot-part squashfs
-SUBTARGETS:=rk33xx rk35xx
+SUBTARGETS:=armv8
 
 KERNEL_PATCHVER:=5.15
 
 define Target/Description
-	Build firmware image for Rockchip SoC devices.
+	Build firmware image for Rockchip RK35xx  SoC devices.
 endef
 
 include $(INCLUDE_DIR)/target.mk
